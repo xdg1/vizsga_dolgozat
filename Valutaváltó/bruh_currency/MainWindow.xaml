@@ -1,0 +1,98 @@
+﻿<Window x:Name="ablak" x:Class="valutaváltó.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:valutaváltó"
+        mc:Ignorable="d"
+         Height="329.949" Width="690.355" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  WindowStyle="None" AllowDrop="True">
+
+    <Grid x:Name="ablakgrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20">
+
+            </RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="from_ertek" HorizontalAlignment="Left" Height="24" Margin="19,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="111"  MaxLength="15" TextChanged="from_ertek_TextChanged" Grid.Row="1" Style="{StaticResource ProductSans}" Foreground="#80590f"/>
+        <TextBox x:Name="to_ertek" HorizontalAlignment="Left" Height="24" Margin="207,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="111" Grid.Column="1" RenderTransformOrigin="0.588,1.309" MaxLength="15" Grid.Row="1" IsReadOnly="True" Style="{StaticResource ProductSans}" Foreground="#80590f"/>
+
+        <Button x:Name="calculate" HorizontalAlignment="Left" Margin="296,218,0,0" VerticalAlignment="Top" Width="101" Height="27" Click="calculate_Click" Grid.ColumnSpan="2" Grid.Row="1" Background="#C70039">
+            <Label x:Name="atvaltas" Content="Átváltás" Style="{StaticResource ProductSans}"  Height="28" VerticalAlignment="Stretch" Foreground="Wheat"></Label>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Grid x:Name="nav" Grid.ColumnSpan="2" MouseLeftButtonDown="nav_MouseLeftButtonDown" Background="#FFD2D2D2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="title" Text="   Valutaváltó" Foreground="#121212"  VerticalAlignment="Center" 
+                       HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource ProductSans}" Height="18" Margin="0,2,0,0" Width="76" FontSize="13"></TextBlock>
+
+            <Button x:Name="hide" Grid.Column="20"   Click="hide_Click" BorderBrush="#FFD2D2D2" Width="22" BorderThickness="0">
+                <StackPanel>
+                    <Image x:Name="hidekep"  RenderTransformOrigin="-0.227,-0.546" Height="16" Width="16" Source="Resources/minimize-button-light.png"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="close" Grid.Column="21" Click="close_Click" BorderBrush="#FFD2D2D2">
+                <Image x:Name="closekep" Source="Resources/close-button-light.png" ></Image>
+
+            </Button>
+        </Grid>
+        <Button x:Name="DarkMode" HorizontalAlignment="Left" Margin="10,275,0,0" Grid.Row="1" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="DarkMode_Click" Height="24" BorderThickness="0" BorderBrush="Transparent">
+            <StackPanel>
+                <Image x:Name="darkmodekep" Source="Resources/dark_mode_light.png" Width="18"/>
+            </StackPanel>
+        </Button>
+
+        <ComboBox x:Name="from" HorizontalAlignment="Left" Margin="172,104,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" IsEditable="True" StaysOpenOnEdit="True" IsTextSearchEnabled="False" TextBoxBase.TextChanged="from_TextChanged" Style="{StaticResource ProductSans}" Foreground="#ba8218" DropDownOpened="from_DropDownOpened">
+            
+        </ComboBox>
+
+        <ComboBox x:Name="to" HorizontalAlignment="Left" Margin="48,104,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" IsEditable="True" StaysOpenOnEdit="True" IsTextSearchEnabled="False" TextBoxBase.TextChanged="to_TextChanged" Grid.Column="1" Style="{StaticResource ProductSans}" RenderTransformOrigin="0.641,1.225" Foreground="#ba8218" DropDownOpened="to_DropDownOpened"/>
+        <Label x:Name="datum" Content="" HorizontalAlignment="Left" Margin="47,274,0,0" Grid.Row="1" VerticalAlignment="Top" Style="{StaticResource ProductSans}" FontSize="12" Foreground="#80590f"/>
+        <Button x:Name="AdatFrissites" Grid.Column="1" HorizontalAlignment="Left" Margin="198,275,0,0" Grid.Row="1" VerticalAlignment="Top" Width="131" Style="{StaticResource ProductSans}" Background="#C70039" Click="AdatFrissites_Click" BorderThickness="0">
+            <Label x:Name="adatszoveg" Content="Adatfrissítés" Foreground="Wheat"></Label>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <ComboBox x:Name="adatokcombo" HorizontalAlignment="Left" Margin="10,240,0,0" Grid.Row="1" VerticalAlignment="Top" Width="153" SelectionChanged="adatokcombo_SelectionChanged" Foreground="#ba8218"/>
+
+    </Grid>
+</Window>

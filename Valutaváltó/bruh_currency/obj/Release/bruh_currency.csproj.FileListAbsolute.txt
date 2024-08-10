@@ -1,0 +1,15 @@
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\bin\Release\bruh_currency.exe.config
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\bin\Release\bruh_currency.exe
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\bin\Release\bruh_currency.pdb
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.csproj.AssemblyReference.cache
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\MainWindow.g.cs
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\App.g.cs
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency_MarkupCompile.cache
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency_MarkupCompile.lref
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\MainWindow.baml
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.g.resources
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.Properties.Resources.resources
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.csproj.GenerateResource.cache
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.csproj.CoreCompileInputs.cache
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.exe
+C:\Users\szila\Desktop\Coding\c#\szakdolgozat\bruh_currency-master\bruh_currency\obj\Release\bruh_currency.pdb

@@ -1,0 +1,14 @@
+﻿<Application x:Class="valutaváltó.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:bruh_currency"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="ProductSans">
+            <Setter Property="TextElement.FontFamily"  Value="fonts/ProductSans.ttf #Product Sans"/>
+        </Style>
+      
+            
+        
+    </Application.Resources>
+</Application>
